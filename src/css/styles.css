@@ -1,0 +1,45 @@
+/*
+$primaryFont: ;
+$secondaryFont: ;
+$primaryColor: ;
+$secondaryColor: ;
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.textNoStyle {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.textNoStyle:visited {
+  text-decoration: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}/*# sourceMappingURL=styles.css.map */

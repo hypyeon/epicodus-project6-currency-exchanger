@@ -1,0 +1,43 @@
+/*
+$primaryFont: ;
+$secondaryFont: ;
+$primaryColor: ;
+$secondaryColor: ;
+*/
+
+@mixin textNoStyle {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.flex {
+    display: flex;
+}
+.col {
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.textNoStyle {
+    @include textNoStyle;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
