@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap');
+
+$primaryFont: 'Roboto Slab', serif;
+$green: rgb(1, 189, 98);
+$colorBg: rgb(247, 252, 234);
 /*
-$primaryFont: ;
 $secondaryFont: ;
 $primaryColor: ;
 $secondaryColor: ;
@@ -40,4 +44,85 @@ $secondaryColor: ;
 }
 .absolute {
     position: absolute;
+}
+
+body {
+    font-family: $primaryFont;
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    height: 85vh;
+    gap: 3rem;
+    background-color: $colorBg;
+    h1 {
+        color: $green;
+        text-shadow: 1px 1px 0 black;
+        border-bottom: 6px solid white;
+        padding: 0 1rem;
+        margin-bottom: -.5rem;
+    }
+    #inputArea {
+        gap: 1rem;
+        #inputDiv::before {
+            content: "$";
+            display: inline-block;
+        }
+        #amount {
+            background-color: $colorBg;
+            text-align: right;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            width: 5rem;
+            padding: .05rem 0;
+            font-family: $primaryFont;
+            font-size: 1.1rem;
+        }
+        #clear-btn {
+            background-color: black;
+            color: white;
+            font-family: $primaryFont;
+            border: none;
+            border-radius: 3px;
+            padding: .25rem .5rem;
+            cursor: pointer;
+        }
+    }
+    #resultArea {
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        width: 50vw;
+        height: 10vh;
+        p {
+            padding: 1rem;
+        }
+    }
+    #selectionArea {
+        width: 50vw;
+        flex-wrap: wrap;
+        p {
+            color: rgba(128, 128, 128, 0.85);
+            width: fit-content;
+            border: 3px solid $green;
+            border-radius: 25px;
+            padding: .25rem .75rem;
+            margin: .25rem;
+            cursor: pointer;
+        }
+        p:hover {
+            background-color: white;
+            color: black;
+            border: 3px solid rgb(0, 221, 114);
+        }
+    }
+}
+footer {
+    height: 15vh;
+    background-color: black;
+    color: white;
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: gainsboro;
+    }
 }
