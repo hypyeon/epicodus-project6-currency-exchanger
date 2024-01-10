@@ -1,4 +1,4 @@
-# Title
+# Currency Exchanger 
 by [Hayeong Pyeon](https://www.hayeong.website)
 
 ## Table of Contents
@@ -11,12 +11,14 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 
 ## Technologies used
 - HTML5, SCSS, JavaScript
-- npm
-- Tests using Jest
+- Webpack, npm
+- API
 
 ## Description
-- This is ...
-- This is ...
+- This is an independent project provided from Epicodus.
+- This project is to review course "Asynchrony and APIs".
+- In the application, user can choose a currency and amount of monetary value to exchange from US dollar to the equivalent value in the selected currency. 
+- There are currently 5 choices of currency available to select for the exchange. 
 
 ## Setup Requirements
 1. Clone this repository to your desktop and open it with a text editor.
@@ -29,8 +31,7 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 
 
 ## Known Bugs
-- Currently ...
-- Last updated: 
+- Development initiated on Jan 10, 2024
 
 ## License
 [MIT](/LICENSE.txt) Copyright © 2024 Hayeong Pyeon
