@@ -6,6 +6,29 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <main class="flex col flex-center">
+    <h1>Currency Exchanger</h1>
+    <section class="flex flex-center" id="inputArea">
+      <div id="inputDiv">
+        <input type="number" id="amount" name="amount" step="0.01" pattern="\d+(\.\d{1,2})?" placeholder="0.00" required>
+      </div>
+      <div>
+        <button id="clear-btn">Clear</button>
+      </div>
+    </section>
+    <section class="flex flex-center" id="resultArea">
+      <p><span id="currencyAmount"></span> <span id="currency"></span></p>
+    </section>
+    <section class="flex flex-center" id="selectionArea">
+      <p id="KRW">South Korea KRW</p>
+      <p id="HKD">Hong Kong HKD</p>
+      <p id="SGD">Singapore SGD</p>
+      <p id="PHP">Philippines PHP</p>
+      <p id="CNY">China CNY</p>
+    </section>
+  </main>
+  <footer>
+    <p>Web Dev <a href="http://www.hayeong.website" target="_blank" rel="noopener noreferrer">Hayeong Pyeon</a></p>
+  </footer>
 </body>
 </html>
