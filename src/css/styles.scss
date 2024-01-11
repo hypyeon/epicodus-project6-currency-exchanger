@@ -119,10 +119,10 @@ main {
 footer {
     height: 15vh;
     background-color: black;
-    color: white;
+    color: $colorBg;
     a {
         cursor: pointer;
         text-decoration: none;
-        color: gainsboro;
+        color: white;
     }
 }
