@@ -1,4 +1,4 @@
-# Currency Exchanger 
+# Currency Exchanger 💱
 by [Hayeong Pyeon](https://www.hayeong.website)
 
 ## Table of Contents
