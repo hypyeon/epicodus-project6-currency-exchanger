@@ -28,8 +28,7 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 * To lint JS files in the src folder, use `npm run lint`.
 
 ## Link
-[Github Pages for this repo]
-(https://hypyeon.github.io/epicodus-project6-currency-exchanger/){:target="_blank"}
+[Github Pages for this repo](https://hypyeon.github.io/epicodus-project6-currency-exchanger/){:target="_blank"}
 
 ## Known Bugs
 - No known bug found as of Jan 10, 2024
