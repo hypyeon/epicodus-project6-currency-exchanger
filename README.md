@@ -28,10 +28,10 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 * To lint JS files in the src folder, use `npm run lint`.
 
 ## Link
-
+https://hypyeon.github.io/epicodus-project6-currency-exchanger/
 
 ## Known Bugs
-- Development initiated on Jan 10, 2024
+- No known bug found as of Jan 10, 2024
 
 ## License
 [MIT](/LICENSE.txt) Copyright © 2024 Hayeong Pyeon
