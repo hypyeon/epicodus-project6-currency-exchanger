@@ -31,7 +31,7 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 <a href="https://hypyeon.github.io/epicodus-project6-currency-exchanger/" target="_blank">GitHub Pages for Currency Exchanger</a>
 
 ## Known Bugs
-- No known bug found as of Jan 10, 2024
+- No known bug found as of Jan 11, 2024
 
 ## License
 [MIT](/LICENSE.txt) Copyright © 2024 Hayeong Pyeon

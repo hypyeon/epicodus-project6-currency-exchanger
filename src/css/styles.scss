@@ -95,6 +95,9 @@ main {
         height: 10vh;
         p {
             padding: 1rem;
+            #loading {
+                display: none;
+            }
         }
     }
     #selectionArea {

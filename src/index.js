@@ -5,25 +5,41 @@ function getCurrency(currency) {
     document.getElementById(currency).addEventListener("click", async function (e) {
         e.preventDefault();
         const amount = document.getElementById("amount").value;
+        const loading = document.getElementById("loading");
         if (!isAmountValid(amount)) {
             printError("Only valid numbers with up to 2 decimals are accepted.");
             return;
         }
         
         try {
+            displayLoading(loading, true);
             const result = await getExchangeRate(amount, currency);
             printResult(result);
             printCurrency(currency);
         } catch (error) {
             printError(error);
+        } finally {
+            displayLoading(loading, false);
         }
     });
 }
 
+// there's a split second while fetching API, wanted to display something on UI during this wait time
+function displayLoading(element, value) {
+    if (value === true) {
+        element.style.display = "block";
+        emptyResult();
+    } else {
+        element.style.display = "none";
+    }
+}
+
 function isAmountValid(amount) {
-    if (isNaN(amount) || amount === "") {
+    // if not a num, empty input, or a negative num: 
+    if (isNaN(amount) || amount === "" || amount < 0) {
         return false;
     }
+    // if has more than 2 decimals:
     const amountToStr = amount.toString();
     const hasDecimal = amountToStr.includes(".");
     if (hasDecimal) {
@@ -44,6 +60,7 @@ function printCurrency(currency) {
 }
 
 function printError(error) {
+    document.getElementById("currencyAmount").innerText = '';
     document.getElementById("currency").innerText = `Error: ${error}`;
 }
 
@@ -51,9 +68,13 @@ function clearInput() {
     document.getElementById("clear-btn").addEventListener("click", (e) => {
         e.preventDefault();
         document.getElementById("amount").value = '';
-        document.getElementById("currencyAmount").innerText = '';
-        document.getElementById("currency").innerText = '';
+        emptyResult();
     });
+}
+// to reduce repetitive codes (used for clearInput and displayLoading functions)
+function emptyResult() {
+    document.getElementById("currencyAmount").innerText = '';
+    document.getElementById("currency").innerText = '';
 }
 
 window.addEventListener("load", function() {
