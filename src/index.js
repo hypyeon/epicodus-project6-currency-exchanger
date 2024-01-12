@@ -35,20 +35,12 @@ function displayLoading(element, value) {
 }
 
 function isAmountValid(amount) {
-    // if not a num, empty input, or a negative num: 
-    if (isNaN(amount) || amount === "" || amount < 0) {
-        return false;
-    }
-    // if has more than 2 decimals:
-    const amountToStr = amount.toString();
-    const hasDecimal = amountToStr.includes(".");
-    if (hasDecimal) {
-        const decimalCount = amountToStr.split(".")[1].length;
-        if (decimalCount > 2) {
-            return false;
-        }
-    }
-    return true;
+    // using regex, ensuring that the amount is:
+    // all whole numbers
+    // if there is a dot, only up to 2 digits allowed
+    const numericRegex = /^[0-9]+(\.[0-9]{1,2})?$/;
+    // returns true or false
+    return numericRegex.test(amount) && parseFloat(amount) >= 0;
 }
 
 function printResult(result) {
