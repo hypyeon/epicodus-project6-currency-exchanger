@@ -22,16 +22,20 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 
 ## Setup Requirements
 1. Clone this repository to your desktop and open it with a text editor.
-2. Install all packages with `npm install`.
-3. Build the project using webpack with `npm run build`.
-4. Start a development server with `npm run start`.
-* To lint JS files in the src folder, use `npm run lint`.
+2. Set up your own API key: 
+- Get an API key from [https://www.exchangerate-api.com/](ExchangeRateAPI-Website).
+- Create a new file named `.env` in the root of this project. 
+- Open the `.env` file and add `API_KEY=` followed by the API key you obtained from the API provider. 
+- Do not share your API key publicly by making sure `.env` file is added to the `.gitignore` file. 
+3. Install all packages with `npm install`.
+4. Build the project using webpack with `npm run build`.
+5. Start a development server with `npm run start`.
 
 ## Link
 <a href="https://hypyeon.github.io/epicodus-project6-currency-exchanger/" target="_blank">GitHub Pages for Currency Exchanger</a>
 
 ## Known Bugs
-- No known bug found as of Jan 11, 2024
+- No known bug found as of Jan 17, 2024
 
 ## License
 [MIT](/LICENSE.txt) Copyright © 2024 Hayeong Pyeon

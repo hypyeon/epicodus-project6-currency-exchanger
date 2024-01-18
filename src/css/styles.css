@@ -1,5 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap");
 /*
-$primaryFont: ;
 $secondaryFont: ;
 $primaryColor: ;
 $secondaryColor: ;
@@ -42,4 +42,91 @@ $secondaryColor: ;
 
 .absolute {
   position: absolute;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  height: 85vh;
+  gap: 3rem;
+  background-color: rgb(247, 252, 234);
+}
+main h1 {
+  color: rgb(1, 189, 98);
+  text-shadow: 1px 1px 0 black;
+  border-bottom: 6px solid white;
+  padding: 0 1rem;
+  margin-bottom: -0.5rem;
+}
+main #inputArea {
+  gap: 1rem;
+}
+main #inputArea #inputDiv::before {
+  content: "$";
+  display: inline-block;
+}
+main #inputArea #amount {
+  background-color: rgb(247, 252, 234);
+  text-align: right;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  width: 5rem;
+  padding: 0.05rem 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.1rem;
+}
+main #inputArea #clear-btn {
+  background-color: black;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  border: none;
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+main #resultArea {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 50vw;
+  height: 10vh;
+}
+main #resultArea p {
+  padding: 1rem;
+}
+main #resultArea p #loading {
+  display: none;
+}
+main #selectionArea {
+  width: 50vw;
+  flex-wrap: wrap;
+}
+main #selectionArea p {
+  color: rgba(128, 128, 128, 0.85);
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 3px solid rgb(1, 189, 98);
+  border-radius: 25px;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+main #selectionArea p:hover {
+  background-color: white;
+  color: black;
+  border: 3px solid rgb(0, 221, 114);
+}
+
+footer {
+  height: 15vh;
+  background-color: black;
+  color: rgb(247, 252, 234);
+}
+footer a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */

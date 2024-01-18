@@ -1,5 +1,5 @@
 import './css/styles.scss';
-import { getExchangeRate } from './api';
+import ExchangeRateAPI from './api';
 
 function getCurrency(currency) {
     document.getElementById(currency).addEventListener("click", async function (e) {
@@ -13,7 +13,7 @@ function getCurrency(currency) {
         
         try {
             displayLoading(loading, true);
-            const result = await getExchangeRate(amount, currency);
+            const result = await ExchangeRateAPI.getExchangeRate(amount, currency);
             printResult(result);
             printCurrency(currency);
         } catch (error) {
