@@ -23,7 +23,7 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 ## Setup Requirements
 1. Clone this repository to your desktop and open it with a text editor.
 2. Set up your own API key: 
-- Get an API key from [https://www.exchangerate-api.com/](ExchangeRateAPI-Website).
+- Get an API key from [ExchangeRateAPI Website](https://www.exchangerate-api.com/).
 - Create a new file named `.env` in the root of this project. 
 - Open the `.env` file and add `API_KEY=` followed by the API key you obtained from the API provider. 
 - Do not share your API key publicly by making sure `.env` file is added to the `.gitignore` file. 
